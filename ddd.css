@@ -1,0 +1,73 @@
+@media (max-width: 575px) { .body-wrap: max-width: 575px }
+@media (min-width: 576px) and (max-width: 767px) { .body-wrap: max-width: 575px }
+@media (min-width: 768px) and (max-width: 991px) { .body-wrap: max-width: 768px }
+@media (min-width: 992px) and (max-width: 1199px) { .body-wrap: max-width: 768px }
+@media (min-width: 1200px) { .body-wrap: max-width: 768px }
+
+img.mr-3.small {
+    width: 100px;
+    height: 100px;
+}
+img.mr-3.ssmall {
+    width: 50px;
+    height: 50px;
+}
+small.text-muted:before {
+    content: ' ';
+    display: block;
+}
+.fa {
+    padding: 3px;
+    font-size: 12px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.h-200 {
+    height: 200px;
+}
+
+img.co-sun {
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+div.co-mountains {
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    background: url('./assets/wrap-mountains.png') repeat-x right;
+}
+
+div.co-ddd {
+    position: relative;
+    z-index: 11;
+    top: -30px;
+    height: 30px;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.co-ddd a {
+    color: white;
+    text-decoration: none;
+}
+
+div.show {
+    display: block;
+}
+
+div.hide {
+    display: none;
+}
