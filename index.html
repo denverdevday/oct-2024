@@ -47,9 +47,6 @@
 <div id="menu" class="container-fluid mt-3 mb-3">
     <div class="row justify-content-md-center">
         <div class="col-md-auto">
-            <a href="./index.html#schedule">Schedule</a>
-        </div>
-        <div class="col-md-auto">
             <a href="./sessions.html#sessions">Sessions</a>
         </div>
         <div class="col-md-auto">
@@ -100,45 +97,6 @@
         </div>
     </div>
 </div>
-
-<div id="schedule" class="container-fluid mt-5 mb-5">
-    <h2 class="mb-3">Schedule</h2>
-    <a name="schedule"></a>
-  
-    <script type="text/javascript" src="https://sessionize.com/api/v2/2f609zhg/view/gridtable"></script>
-  
-    <script type="text/javascript">
-        window.addEventListener('sessionize.onload', function (e) {
-            const roomCapacityRx = /\s+\(\w+\)/;
-  
-            let dayTitle = document.querySelector('h1[class="sz-day__title"]');
-            dayTitle.parentElement.removeChild(dayTitle);
-  
-            document.querySelectorAll('th').forEach(t => {
-               t.innerText = t.innerText.replace(roomCapacityRx, '');
-            });
-  
-            document.querySelectorAll('td[data-room-name]').forEach(d => {
-               d.dataset.roomName = d.dataset.roomName.replace(roomCapacityRx, '');
-            });
-            let hl = document.querySelectorAll('tr.sz-row-highlight');
-            hl.forEach(h => h.className = h.className.replace('sz-row-highlight', ''));
-  
-            function eventSession(id) {
-                let divElement = document.querySelector('div[data-sessionid="' + id + '"]');
-                divElement.classList.add('text-center');
-                let divRoomElement = divElement.querySelector('div[class="sz-session__meta-group"]');
-                divRoomElement.parentElement.removeChild(divRoomElement);
-            }
-  
-            eventSession('fd6aeed5-2f4f-4993-a4ec-e07c6dc33e4a'); // Breakfast
-            eventSession('c5c0ae2b-d394-46d9-9c21-141e6eeaede4'); // Opening Ceremony
-            eventSession('a70578a0-b119-4dc4-86be-a8cb5a34e479'); // Keynote
-            eventSession('457826ef-98ce-490b-92cc-5f1439edaa48'); // Lunch
-        });
-    </script>
-  
-  </div>
 
 </div>
 
