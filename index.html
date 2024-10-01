@@ -44,6 +44,25 @@
         </div>
     </div>
 
+    <div class="container-fluid text-center" id="tickets">
+        <noscript><a href="https://www.eventbrite.com/e/denver-dev-day-friday-october-18-2024-tickets-1034940714537" rel="noopener noreferrer" target="_blank"></noscript>
+            <button id="eventbrite-widget-modal-trigger-1034940714537" type="button">Buy Tickets</button>
+            <noscript></a>Buy Tickets on Eventbrite</noscript>
+            <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+            <script type="text/javascript">
+                var exampleCallback = function() {
+                    console.log('Order complete!');
+                };
+                window.EBWidgets.createWidget({
+                    widgetType: 'checkout',
+                    eventId: '1034940714537',
+                    modal: true,
+                    modalTriggerElementId: 'eventbrite-widget-modal-trigger-1034940714537',
+                    onOrderComplete: exampleCallback
+                });
+            </script>
+      </div>
+
 <div id="menu" class="container-fluid mt-3 mb-3">
     <div class="row justify-content-md-center">
         <div class="col-md-auto">
